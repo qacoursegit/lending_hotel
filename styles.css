@@ -1,0 +1,223 @@
+/* styles.css */
+body {
+    font-family: Trebuchet MS;
+    margin: 0;
+    padding: 0;
+  }
+  
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+header img {
+    width: 25%;
+}
+
+#banner {
+    position: relative; /* Делаем блок-контейнер позиционированным */
+    max-width: 100%;
+    height: auto;
+    text-align: center; /* Центрируем текст */
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  #banner img {
+    width: 100%; /* Занимает всю ширину блока */
+    height: auto;
+    max-width: 100%;
+    display: block;
+  }
+  
+  #banner h1 {
+    position: absolute; /* Позиционируем заголовок абсолютно внутри родительского блока */
+    top: 70%; /* Размещаем заголовок в верхней части изображения */
+    left: 20%; /* и по центру */
+    transform: translate(-50%, -50%); /* Центрируем заголовок по горизонтали и вертикали */
+    color: white; /* Цвет текста */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Добавляем тень тексту для лучшей читаемости */
+    font-size: 4vw;
+  }
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0048bd;
+    font-weight: bold;
+    font-size: larger;
+}
+  
+  section {
+    margin-top: 20px;
+  }
+
+  .description {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+  }
+
+  .description b {
+    color: #0048bd;
+  }
+  
+  h2 {
+    color: #0048bd;
+    font-size: 60px;
+    padding-left: 50px;
+
+  }
+  #rooms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1500px; /* Ширина контейнера с номерами, можно устанавливать по вашему усмотрению */
+    margin: 0 auto;
+  }
+
+  #service {
+    overflow: scroll;
+  }
+  
+  .card {
+    flex: 0 0 25%; /* Ширина каждой карточки - 45%, можно настроить по вашему усмотрению */
+    margin: 50px; /* Внешний отступ для карточек */
+    text-align: center; /* Выравниваем содержимое по центру */
+  }
+  
+  .card img {
+    max-width: 100%; /* Изображение внутри карточки займет всю доступную ширину */
+  }
+  
+  .namber_title {
+    font-weight: bold;
+    font-size: 2em; /* Жирный шрифт для названия номера */
+    margin: 0px;
+  }
+  
+  .price {
+    color: #0048bd; /* Цвет цены */
+    font-size: 1.5em; /* Размер шрифта для цены */
+    margin: 0px;
+    font-weight: bold;
+  }
+
+  #service .title {
+    color: #0048bd;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: 0px;
+  }
+  
+  .carousel {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+
+  }
+
+  .carousel img {
+    max-width: 500px;
+  }
+
+  .carousel div {
+    opacity: 0.5;
+    transition: opacity 0.3s;
+  }
+  
+  .carousel div:hover,
+  .carousel div:focus {
+    opacity: 1;
+  }
+  
+  .carousel div:nth-child(1) {
+    order: 1;
+  }
+  
+  .carousel div:nth-child(2) {
+    order: 2;
+  }
+  
+  .carousel div:nth-child(3) {
+    order: 3;
+  }
+  
+  .carousel div:nth-child(4) {
+    order: 4;
+  }
+  
+  .carousel div:nth-child(5) {
+    order: 5;
+  }
+  
+  .carousel div:nth-child(6) {
+    order: 6;
+  }
+  
+  /* .review {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  } */
+
+  #reviews {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  #reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1500px; /* Ширина контейнера с номерами, можно устанавливать по вашему усмотрению */
+    margin: 0 auto;
+  }
+  
+  .review {
+    flex: 0 0 30%;
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .review img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .review .review_text {
+    margin-top: 60px;
+  }
+  
+  .review .name {
+    font-weight: bold;
+  }
+  
+  #contacts {
+    margin-left: 60px;
+    font-size: 20px;
+    margin-bottom: 100px;
+  }
