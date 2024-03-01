@@ -17,6 +17,20 @@ header img {
   width: 25%;
 }
 
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+footer h3 {
+  font-size: 30px;
+  color: #0048bd;
+}
+
 #banner {
   position: relative;
   max-width: 100%;
