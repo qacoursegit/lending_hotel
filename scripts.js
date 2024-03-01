@@ -12,7 +12,8 @@ cards.forEach(card => {
     modalImage.src = this.querySelector('img').src;
     modalTitle.textContent = this.querySelector('.number_title').textContent;
     modalText.textContent = this.querySelector('.modal-text').textContent;
-    modalPrice.textContent = this.querySelector('.price').textContent + " / ночь";
+    // Баг в передаче цены в модалку
+    // modalPrice.textContent = this.querySelector('.price').textContent + " / ночь";
   });
 });
 
