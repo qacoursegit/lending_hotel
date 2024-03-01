@@ -1,223 +1,287 @@
 /* styles.css */
 body {
-    font-family: Trebuchet MS;
-    margin: 0;
-    padding: 0;
-  }
-  
+  font-family: Trebuchet MS;
+  margin: 0;
+  padding: 0;
+}
+
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #f2f2f2;
-    padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 10px;
 }
 
 header img {
-    width: 25%;
+  width: 25%;
 }
 
 #banner {
-    position: relative; /* Делаем блок-контейнер позиционированным */
-    max-width: 100%;
-    height: auto;
-    text-align: center; /* Центрируем текст */
-    padding: 0px;
-    margin: 0px;
-  }
-  
-  #banner img {
-    width: 100%; /* Занимает всю ширину блока */
-    height: auto;
-    max-width: 100%;
-    display: block;
-  }
-  
-  #banner h1 {
-    position: absolute; /* Позиционируем заголовок абсолютно внутри родительского блока */
-    top: 70%; /* Размещаем заголовок в верхней части изображения */
-    left: 20%; /* и по центру */
-    transform: translate(-50%, -50%); /* Центрируем заголовок по горизонтали и вертикали */
-    color: white; /* Цвет текста */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Добавляем тень тексту для лучшей читаемости */
-    font-size: 4vw;
-  }
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+#banner img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+#banner h1 {
+  position: absolute;
+  top: 70%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  font-size: 4vw;
+}
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
 
 nav ul li {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #0048bd;
-    font-weight: bold;
-    font-size: larger;
+  text-decoration: none;
+  color: #0048bd;
+  font-weight: bold;
+  font-size: larger;
 }
-  
-  section {
-    margin-top: 20px;
-  }
 
-  .description {
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 20px;
-  }
+section {
+  margin-top: 20px;
+}
 
-  .description b {
-    color: #0048bd;
-  }
-  
-  h2 {
-    color: #0048bd;
-    font-size: 60px;
-    padding-left: 50px;
+.description {
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 20px;
+}
 
-  }
-  #rooms {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 1500px; /* Ширина контейнера с номерами, можно устанавливать по вашему усмотрению */
-    margin: 0 auto;
-  }
+.description b {
+  color: #0048bd;
+}
 
-  #service {
-    overflow: scroll;
-  }
-  
-  .card {
-    flex: 0 0 25%; /* Ширина каждой карточки - 45%, можно настроить по вашему усмотрению */
-    margin: 50px; /* Внешний отступ для карточек */
-    text-align: center; /* Выравниваем содержимое по центру */
-  }
-  
-  .card img {
-    max-width: 100%; /* Изображение внутри карточки займет всю доступную ширину */
-  }
-  
-  .namber_title {
-    font-weight: bold;
-    font-size: 2em; /* Жирный шрифт для названия номера */
-    margin: 0px;
-  }
-  
-  .price {
-    color: #0048bd; /* Цвет цены */
-    font-size: 1.5em; /* Размер шрифта для цены */
-    margin: 0px;
-    font-weight: bold;
-  }
+h2 {
+  color: #0048bd;
+  font-size: 60px;
+  padding-left: 50px;
+}
 
-  #service .title {
-    color: #0048bd;
-    font-size: 1.5em;
-    font-weight: 600;
-    margin-top: 0px;
-  }
-  
-  .carousel {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 50px;
-    margin-right: 50px;
+h3 {
+  color: #0048bd;
+  font-size: 30px;
+}
 
-  }
+#rooms {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1500px;
+  margin: 0 auto;
+}
 
-  .carousel img {
-    max-width: 500px;
-  }
+#service {
+  overflow: scroll;
+}
 
-  .carousel div {
-    opacity: 0.5;
-    transition: opacity 0.3s;
-  }
-  
-  .carousel div:hover,
-  .carousel div:focus {
-    opacity: 1;
-  }
-  
-  .carousel div:nth-child(1) {
-    order: 1;
-  }
-  
-  .carousel div:nth-child(2) {
-    order: 2;
-  }
-  
-  .carousel div:nth-child(3) {
-    order: 3;
-  }
-  
-  .carousel div:nth-child(4) {
-    order: 4;
-  }
-  
-  .carousel div:nth-child(5) {
-    order: 5;
-  }
-  
-  .carousel div:nth-child(6) {
-    order: 6;
-  }
-  
-  /* .review {
-    background-color: #f2f2f2;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-  } */
+.card {
+  flex: 0 0 25%;
+  margin: 50px;
+  text-align: center;
+}
 
-  #reviews {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: space-between;
-  }
+.card img {
+  max-width: 100%;
+}
 
-  #reviews {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 1500px; /* Ширина контейнера с номерами, можно устанавливать по вашему усмотрению */
-    margin: 0 auto;
-  }
-  
-  .review {
-    flex: 0 0 30%;
-    background-color: #f2f2f2;
-    padding: 10px;
-    margin-bottom: 20px;
-    position: relative;
-  }
-  
-  .review img {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
-  
-  .review .review_text {
-    margin-top: 60px;
-  }
-  
-  .review .name {
-    font-weight: bold;
-  }
-  
-  #contacts {
-    margin-left: 60px;
-    font-size: 20px;
-    margin-bottom: 100px;
-  }
+.namber_title {
+  font-weight: bold;
+  font-size: 2em;
+  margin: 0px;
+}
+
+.price {
+  color: #0048bd;
+  font-size: 1.5em;
+  margin: 0px;
+  font-weight: bold;
+}
+
+#service .title {
+  color: #0048bd;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-top: 0px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.carousel img {
+  max-width: 500px;
+}
+
+.carousel div {
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.carousel div:hover,
+.carousel div:focus {
+  opacity: 1;
+}
+
+.carousel div:nth-child(1) {
+  order: 1;
+}
+
+.carousel div:nth-child(2) {
+  order: 2;
+}
+
+.carousel div:nth-child(3) {
+  order: 3;
+}
+
+.carousel div:nth-child(4) {
+  order: 4;
+}
+
+.carousel div:nth-child(5) {
+  order: 5;
+}
+
+.carousel div:nth-child(6) {
+  order: 6;
+}
+
+#reviews {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+#reviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.review {
+  flex: 0 0 30%;
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.review img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.review .review_text {
+  margin-top: 60px;
+}
+
+.review .name {
+  font-weight: bold;
+}
+
+#contacts {
+  margin-left: 60px;
+  font-size: 20px;
+  margin-bottom: 100px;
+}
+
+/* Стили для модального окна */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 900px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
+  border-end-end-radius: 10%;
+}
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: -1;
+}
+
+.modal-content-wrapper {
+  display: flex;
+}
+
+.modal-content {
+  flex: 1;
+  max-width: 50%;
+  object-fit: cover;
+}
+
+.modal-description {
+  padding-left: 30px;
+}
+
+.modal-info {
+  text-align: left;
+}
+
+#modal-price {
+  color: #0048bd;
+  font-weight: 800;
+}
+
+.close {
+  color: black;
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.modal-info {
+  width: 300px;
+  height: 300px;
+}
+
+#modal-image {
+  max-width: 50%;
+}
